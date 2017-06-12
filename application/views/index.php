@@ -41,7 +41,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="jumbotron jumbo-1">
-
 				<div class="wrapper-jumbotron">
 					<h2>Memilih Perguruan Tinggi berdasarkan minat dan bakat</h2> 
 					<p>Bidang pekerjaan dengan masa depan cerah</p>
@@ -54,6 +53,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<button class="btn-jumbotron">Featured Speaker</button>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div id="section2">
+				<h1 class="text-center">Connecting Stakeholders of Global Education</h1>
+				<h4 class="text-center">Dihadiri oleh puluhan booth dibidang pendidikan yang berasal dari dalam dan luar negeri, directors of relevant government agencies and key influential figures in the industry, the Global Career & Education Fair 2017 aims to accelerate the growth of the countr's human resources by gathering key stakeholders and inspiring participants to grow their country</h4>
 			</div>
 		</div>
 
