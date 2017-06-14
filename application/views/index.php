@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>Event Topcareer.id</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/css/css.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Oxygen|Patua+One|Quicksand|Raleway|Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen|Patua+One|Quicksand|Raleway|Righteous|Montserrat" rel="stylesheet">
 	</head>
 	<body>
 		<div id="section1" class="container-fluid no-padding">
@@ -60,6 +60,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div id="section2">
 				<h1 class="text-center">Connecting Stakeholders of Global Education</h1>
 				<h4 class="text-center">Dihadiri oleh puluhan booth dibidang pendidikan yang berasal dari dalam dan luar negeri, directors of relevant government agencies and key influential figures in the industry, the Global Career & Education Fair 2017 aims to accelerate the growth of the countr's human resources by gathering key stakeholders and inspiring participants to grow their country</h4>
+			</div>
+
+			<div class="section-2-flex">
+				<div class="item-section-2-flex">
+					
+				</div>
 			</div>
 		</div>
 
