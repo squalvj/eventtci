@@ -9,18 +9,45 @@ $sand = "Quicksand", Helvetica
 $rale = "Raleway", Helvetica
 $oxygen = "Oxygen", Helvetica
 $patua = "Patua one", Helvetica
+$mont = "Montserrat", Helvetica
 $right = "Righteous", Helvetica //boldnya mantap
 $black = #2C3E50;
 $red = #E74C3C;
+$rubick = 'Rubik Mono One', Helvetica
 // $white = #ECF0F1;
 $white = white;
 $blue = #3498DB;
 $darkBlue = #2980B9;
-
+$redt = tint($red, 20%)
 
 h1, h2, h4
 	font-family $patua
 
+.scrolled
+	width 100%
+	-webkit-transition: all .50s ease
+	-moz-transition: all .50s ease
+	-ms-transition: all .50s ease
+	-o-transition: all .50s ease
+	transition: all .50s ease 
+	transform translateY(100)
+	position fixed
+	top 0;
+	left 0
+	height 120px
+	background-color lightblue 
+	
+.nav-up
+	top -130px
+
+#section1
+	-webkit-transition: all .50s ease
+	-moz-transition: all .50s ease
+	-ms-transition: all .50s ease
+	-o-transition: all .50s ease
+	transition: all .50s ease 
+	position fixed
+	width 100%
 .parent-section1
 	max-width 1200px
 	margin 35px auto
@@ -30,6 +57,7 @@ h1, h2, h4
 	flex-direction row
 	justify-content space-between
 	flex-start end
+	width 65%
 .item-nav
 	text-align center
 	font-size 0.7em
@@ -37,59 +65,183 @@ h1, h2, h4
 	position relative
 	> button
 		padding 15px 25px
-		background-color $red
-		color $white
+		background-color transparent
+		color white
 		letter-spacing 2px
-		border-radius 30px 0
-		border 0
+		border none
 		position relative
 		-webkit-transition: all .25s ease
 		-moz-transition: all .25s ease
 		-ms-transition: all .25s ease
 		-o-transition: all .25s ease
 		transition: all .25s ease
-		&:hover
-			border-radius 0
-			&:after
-				width 100%
-		&:after
-			content '';
-			width 0%;
-			height 5px;
+		font-size 1em
+		text-transform uppercase
+		&:before
+			content ''
 			position absolute
-			background-color $red
-			bottom -10px
-			left 0
+			width 100%
 			-webkit-transition: all .25s ease
 			-moz-transition: all .25s ease
 			-ms-transition: all .25s ease
 			-o-transition: all .25s ease
 			transition: all .25s ease
+			height 0%
+			background-color $redt
+			left 0
+			top 0
+		&:hover
+			color white
+			&:before
+				height 100%
+				z-index -1
 		
-.jumbo-1
-	margin 30px 0
-	color $white
-	position relative
-	background-color transparent
-	box-shadow 0px 10px 30px -3px rgba(0,0,0,0.5)
-	overflow hidden
-.wrapper-jumbotron
-	max-width 1200px
-	margin 0 auto
-	> h2
-		font-family $sand
-		font-weight bold
-.wrapper-detail-jumbotron
-	margin 60px 0
-	> button
-		margin-top 20px
-		background-color #e74127
-		padding 15px 25px
-		color $white
-		border 2px solid $white
-		font-size 0.8em
+
 #section2
 	margin 30px 0
 	> h4
 		font-family $rale
 		line-height 25px
+.wrapper-5
+	margin 50px 0
+.wrapper-icon
+	font-family $rale
+	font-size 0.8em
+	img
+		width 50px
+
+// section 3
+.wrapper-fluid
+	max-width 1170px
+	height 150px
+	margin 0 auto
+.flex-column
+	display flex
+	flex-direction flex-column
+	flex-wrap wrap
+		
+.section-utama
+	height 100vh
+.swiper-container
+	height 100vh
+	z-index 2
+.swiper-slide-1
+	background url("../img/1.jpg") center / cover no-repeat
+.swiper-slide-2
+	background url("../img/2.jpg") center / cover no-repeat
+.swiper-slide-3
+	background url("../img/2.jpg") center / cover no-repeat
+.swiper-slide-4
+	background url("../img/2.jpg") center / cover no-repeat
+.swiper-slide-5
+	background url("../img/2.jpg") center / cover no-repeat
+.swiper-slide
+	height 100%
+	position relative
+	display flex
+	justify-content center
+	align-items center
+	&:before
+		content '';
+		width 100%
+		height 100%
+		position absolute
+		left 0
+		top 0
+		background-color rgba(0,0,0,0.7)
+		z-index 1
+	.container
+		height: auto;
+		z-index 99
+		position relative
+		color white
+		.wrapper-slider
+			height 350px
+			margin auto 0
+			> h2
+				font-family $mont
+				font-weight bold
+				text-transform uppercase
+				font-size 40px
+				color tint($red,20%)
+			> p
+				font-family $rale
+				color white
+		.wrapper-detail-jumbotron
+			margin 60px 0
+			h4
+				font-family $rale
+				
+			button.btn-jumbotron
+				margin-top 20px
+				background-color transparent
+				padding 15px 25px
+				color white
+				border 2px solid white
+				font-size 0.8em
+				-webkit-transition: all .25s ease
+				-moz-transition: all .25s ease
+				-ms-transition: all .25s ease
+				-o-transition: all .25s ease
+				transition: all .25s ease
+				&:hover
+					background-color white
+					color $red
+			.red-btn
+				background-color tint($red,20%) !important
+				color white
+				border 2px solid tint($red, 20%) !important
+				&:hover
+					color $red !important
+					background-color white !important
+					border 2px solid white !important
+		
+
+// navbar
+$primary = #37ca7e;
+$secondary = white//#43a6dd; //ini warna background nav
+$transitionSpeed = 0.4s;
+.navbar
+	border none
+	transition $transitionSpeed
+	&-brand
+		font-size 2.25rem
+		font-weight 900
+		color #4b4b4b
+	&--size
+		&--xl
+			padding 2rem 0
+		&--lg
+			padding 2rem 0
+		&--md
+			padding 1rem 0
+	    &--sm
+			padding 0
+	&--color
+		&--white
+			background white
+		&--primary
+			background $primary
+		&--secondary
+			background $secondary
+			button
+				color $redt !important
+		&--ghost
+			background transparent
+	  		.navbar-brand,
+			.navbar-text,
+			a 
+				color white     
+.navbar-brand
+	margin-top -15px   
+      
+.icon-bar
+	background-color white
+.overlay
+	position absolute
+	z-index -1
+	top 0
+	left 0
+	height 100%
+	width 100%
+	background rgba(#000, 0.6)
