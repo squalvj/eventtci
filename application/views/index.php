@@ -29,19 +29,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </div>
 		    <div class="collapse navbar-collapse" id="mobileNav">
 		      <div class="navigasi navbar-right">
-				<div class="item-nav">
-					<button>Speaker</button>
-				</div>
-				<div class="item-nav">
-					<button>Exhibitor</button>
-				</div>
-				<div class="item-nav">
-					<button>Ticket Info</button>
-				</div>
-				<div class="item-nav">
-					<button>Venus</button>
-				</div>
-			</div>
+						<div class="item-nav">
+							<button>Speaker</button>
+						</div>
+						<div class="item-nav">
+							<button>Exhibitor</button>
+						</div>
+						<div class="item-nav">
+							<button>Ticket Info</button>
+						</div>
+						<div class="item-nav">
+							<button>Venue</button>
+						</div>
+					</div>
 		    </div>
 		  </div>
 		</nav>
@@ -123,10 +123,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</div>
-				<div class="swiper-button-prev swiper-button-white"></div>
-				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="hidden-xs swiper-button-prev swiper-button-white"></div>
+				<div class="shidden-xs wiper-button-next swiper-button-white"></div>
 				<div class="swiper-pagination swiper-pagination-white"></div>
-				<div class="swiper-scrollbar"></div>
+				<div class="hidden-xs swiper-scrollbar"></div>
 			</div>
 		</div>
 
@@ -135,31 +135,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h1 class="text-center">Connecting Stakeholders of Global Education</h1>
 				<h4 class="text-center">Dihadiri oleh puluhan booth dibidang pendidikan yang berasal dari dalam dan luar negeri, directors of relevant government agencies and key influential figures in the industry, the Global Career & Education Fair 2017 aims to accelerate the growth of the countr's human resources by gathering key stakeholders and inspiring participants to grow their country</h4>
 				<div class="wrapper-5 row">
-					<div class="col-xs-offset-1 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
+					<div class="col-xs-12 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
 						<div class="wrapper-icon text-center">
 							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
 							<h5>Government</h5>
 						</div>
 					</div>
-			    <div class="col-md-2 col-sm-2 col-xs-2">
+			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
 							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
 							<h5>Scholarship</h5>
 						</div>
 			    </div>
-			    <div class="col-md-2 col-sm-2 col-xs-2">
+			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
 							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
 							<h5>College</h5>
 						</div>
 			    </div>
-			    <div class="col-md-2 col-sm-2 col-xs-2">
+			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
 							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
 							<h5>Education Services</h5>
 						</div>
 			    </div>
-			    <div class="col-md-2 col-sm-2 col-xs-2">
+			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
 							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
 							<h5>Scholarship Grantee</h5>
@@ -171,31 +171,111 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div id="section3" class="container-fluid">
 			<div class="wrapper-fluid">
-				<div class="row">
-					<div class="col-md-4">
+				<div class="row no-margin">
+					<div class="col-xs-12 col-md-4 col-sm-4">
 						<div class="flex-column">
-							
+							<img class="ico-3" src="<?php echo base_url();?>assets/img/calendar.png">
+							<h4 class="text-3">1 Day</h4>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-xs-12 col-md-4 col-sm-4">
 						<div class="flex-column">
-
+							<img class="ico-3" src="<?php echo base_url();?>assets/img/speaker.png">
+							<h4 class="text-3"><span id="speakerCount">1</span> Speakers</h4>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-xs-12 col-md-4 col-sm-4">
 						<div class="flex-column">
-
+							<img class="ico-3" src="<?php echo base_url();?>assets/img/exhibit.png">
+							<h4 class="text-3"><span id="exhibitCount">1</span> Exhibitors</h4>
 						</div>
 					</div>	
 				</div>
 			</div>
 		</div>
 
+		<div class="container">
+			<div id="section4">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="featuredSpeaker">
+							Featured Speaker
+						</h2>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="wrapper-speaker">
+							<img class="img-speaker" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							<h4>Nabilah JKT 48</h4>
+							<h4>Oshi Waifu</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="<?php echo base_url();?>assets/js/j.js"></script>
-		<script src="<?php echo base_url();?>assets/js/countUp.js"></script>
+		<script src="<?php echo base_url();?>assets/bower_components/countUp.js/dist/countUp.js"></script>
 		<script src="<?php echo base_url();?>assets/bower_components/swiper/dist/js/swiper.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/parallax.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/j.js"></script>
 	</body>
 </html>

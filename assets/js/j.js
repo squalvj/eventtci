@@ -88,10 +88,20 @@ jQuery(document).ready(function($) {
 	}, 100);
 
 	$('#section3').parallax({imageSrc: 'assets/img/p.png'});
-
+	countUpStart();
 	function countUpStart(){
-		var numAnim = new CountUp("SomeElementYouWantToAnimate", 24.02, 99.99);
-		numAnim.start();
+		var ex = document.getElementById("exhibitCount");
+		var speak = document.getElementById("speakerCount");
+		var options = {
+		  useEasing : true, 
+		  useGrouping : true, 
+		  separator : ',', 
+		  decimal : '.', 
+		};
+		var demo = new CountUp(ex, 0, 35, 0, 5, options);
+		var demo2 = new CountUp(speak, 0, 12, 0, 5, options);
+		demo.start();
+		demo2.start();
 	}
 
 });

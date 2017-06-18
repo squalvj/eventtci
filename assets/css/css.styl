@@ -19,9 +19,11 @@ $white = white;
 $blue = #3498DB;
 $darkBlue = #2980B9;
 $redt = tint($red, 20%)
+$asphalt = #34495e
 
 h1, h2, h4
 	font-family $patua
+	
 
 .scrolled
 	width 100%
@@ -58,11 +60,17 @@ h1, h2, h4
 	justify-content space-between
 	flex-start end
 	width 65%
+	@media (max-width: 550px)
+		flex-direction column
+		width 100%
+		padding-top 20px
 .item-nav
 	text-align center
 	font-size 0.7em
 	font-family $patua
 	position relative
+	@media (max-width: 550px)
+		text-align left
 	> button
 		padding 15px 25px
 		background-color transparent
@@ -99,6 +107,7 @@ h1, h2, h4
 
 #section2
 	margin 30px 0
+	color $asphalt
 	> h4
 		font-family $rale
 		line-height 25px
@@ -110,15 +119,6 @@ h1, h2, h4
 	img
 		width 50px
 
-// section 3
-.wrapper-fluid
-	max-width 1170px
-	height 150px
-	margin 0 auto
-.flex-column
-	display flex
-	flex-direction flex-column
-	flex-wrap wrap
 		
 .section-utama
 	height 100vh
@@ -195,9 +195,64 @@ h1, h2, h4
 					color $red !important
 					background-color white !important
 					border 2px solid white !important
+					
+// section 3
+#section3
+	padding 30px 0
+.wrapper-fluid
+	max-width 1170px
+	min-height 150px
+	margin 0 auto
+	padding 55px 0
+	@media (max-width: 785px)
+		padding 0
+.flex-column
+	display flex
+	flex-direction row
+	justify-content center
+	@media (max-width: 785px)
+		justify-content flex-start
+		align-items center
+		margin: 20px 0;
+.ico-3
+	margin-right 10px
+	height 50px
+.text-3
+	font-size 1.5em
+	color white
+	font-family $sand
+	margin 0
+	@media (max-width: 996px)
+		font-size 3.2vw
+	@media (max-width: 770px)
+		font-size 1.4em
 		
-
-// navbar
+// section 4
+#section4
+	min-height 500px
+	margin 30px 0
+.featuredSpeaker
+	color $asphalt
+	font-family $mont
+	font-weight bold
+	text-transform uppercase
+	margin-bottom 30px
+.wrapper-speaker
+	display block
+	margin-bottom 50px;
+	position relative
+	&:after
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom 0
+		width: 0;
+		height: 0;
+		border-bottom: 30px solid #34495e;
+		border-left: 30px solid transparent;
+	.img-speaker
+		width 100%
+// navbar 
 $primary = #37ca7e;
 $secondary = white//#43a6dd; //ini warna background nav
 $transitionSpeed = 0.4s;
@@ -224,8 +279,32 @@ $transitionSpeed = 0.4s;
 			background $primary
 		&--secondary
 			background $secondary
+			.navbar-toggle
+				&:hover
+					.icon-bar
+						background-color white
+			.icon-bar
+				background-color $red
 			button
-				color $redt !important
+				color $redt 
+				&:before
+					content ''
+					position absolute
+					width 100%
+					-webkit-transition: all .25s ease
+					-moz-transition: all .25s ease
+					-ms-transition: all .25s ease
+					-o-transition: all .25s ease
+					transition: all .25s ease
+					height 0%
+					background-color $redt
+					left 0
+					top 0
+				&:hover
+					color white !important
+					&:before
+						height 100%
+						z-index -1
 		&--ghost
 			background transparent
 	  		.navbar-brand,
@@ -237,6 +316,7 @@ $transitionSpeed = 0.4s;
       
 .icon-bar
 	background-color white
+	
 .overlay
 	position absolute
 	z-index -1
