@@ -56,7 +56,7 @@ h4 {
   background-color: #e74c3c;
 }
 .navbar--color--secondary button {
-  color: #eb6f63;
+  color: #eb6f63 !important;
 }
 .navbar--color--secondary button:before {
   content: '';
