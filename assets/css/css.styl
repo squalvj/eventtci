@@ -25,6 +25,81 @@ h1, h2, h4
 	font-family $patua
 .white
 	color white
+	
+// navbar 
+$primary = #37ca7e;
+$secondary = white//#43a6dd; //ini warna background nav
+$transitionSpeed = 0.4s;
+.navbar
+	border none
+	transition $transitionSpeed
+	&-brand
+		font-size 2.25rem
+		font-weight 900
+		color #4b4b4b
+	&--size
+		&--xl
+			padding 2rem 0
+		&--lg
+			padding 2rem 0
+		&--md
+			padding 1rem 0
+	    &--sm
+			padding 0
+	&--color
+		&--white
+			background white
+		&--primary
+			background $primary
+		&--secondary
+			background $secondary
+			box-shadow 0px -5px 25px rgba(0,0,0,0.7)
+			.navbar-toggle
+				&:hover
+					.icon-bar
+						background-color white
+			.icon-bar
+				background-color $red
+			button
+				color $redt 
+				&:before
+					content ''
+					position absolute
+					width 100%
+					-webkit-transition: all .25s ease
+					-moz-transition: all .25s ease
+					-ms-transition: all .25s ease
+					-o-transition: all .25s ease
+					transition: all .25s ease
+					height 0%
+					background-color $redt
+					left 0
+					top 0
+				&:hover
+					color white !important
+					&:before
+						height 100%
+						z-index -1
+		&--ghost
+			background transparent
+	  		.navbar-brand,
+			.navbar-text,
+			a 
+				color white     
+.navbar-brand
+	margin-top -15px   
+      
+.icon-bar
+	background-color white
+	
+.overlay
+	position absolute
+	z-index -1
+	top 0
+	left 0
+	height 100%
+	width 100%
+	background rgba(#000, 0.6)
 
 .scrolled
 	width 100%
@@ -271,6 +346,7 @@ h1, h2, h4
 .img-testimoni
 	width 100%
 	border-radius 700px
+	border 5px solid white
 
 .wrapper-testimoni
 	display flex
@@ -397,80 +473,7 @@ h1, h2, h4
 	min-height 500px
 	padding 35px 0
 
-// navbar 
-$primary = #37ca7e;
-$secondary = white//#43a6dd; //ini warna background nav
-$transitionSpeed = 0.4s;
-.navbar
-	border none
-	transition $transitionSpeed
-	&-brand
-		font-size 2.25rem
-		font-weight 900
-		color #4b4b4b
-	&--size
-		&--xl
-			padding 2rem 0
-		&--lg
-			padding 2rem 0
-		&--md
-			padding 1rem 0
-	    &--sm
-			padding 0
-	&--color
-		&--white
-			background white
-		&--primary
-			background $primary
-		&--secondary
-			background $secondary
-			box-shadow 0px -5px 25px rgba(0,0,0,0.7)
-			.navbar-toggle
-				&:hover
-					.icon-bar
-						background-color white
-			.icon-bar
-				background-color $red
-			button
-				color $redt 
-				&:before
-					content ''
-					position absolute
-					width 100%
-					-webkit-transition: all .25s ease
-					-moz-transition: all .25s ease
-					-ms-transition: all .25s ease
-					-o-transition: all .25s ease
-					transition: all .25s ease
-					height 0%
-					background-color $redt
-					left 0
-					top 0
-				&:hover
-					color white !important
-					&:before
-						height 100%
-						z-index -1
-		&--ghost
-			background transparent
-	  		.navbar-brand,
-			.navbar-text,
-			a 
-				color white     
-.navbar-brand
-	margin-top -15px   
-      
-.icon-bar
-	background-color white
-	
-.overlay
-	position absolute
-	z-index -1
-	top 0
-	left 0
-	height 100%
-	width 100%
-	background rgba(#000, 0.6)
+
 
 
 // responsive androi
@@ -490,6 +493,16 @@ $transitionSpeed = 0.4s;
 	.wrapper-testimoni
 		padding 0 15px
 		margin-bottom 50px
+		flex-direction column
+		.wrapper-img-testimoni
+			width 100%
+		.wrapper-quote
+			width 100%
+			padding 0
+			> div
+				position: static
+				transform none
+				margin-top 20px
 	#testimonial
 		> .container
 			padding 55px 0 30px 0

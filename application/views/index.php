@@ -614,7 +614,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 <!-- AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg -->
 		<div id="map" class="container">
-			<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRfFHwYzzaS4RDNx6e5vsJTI&key=AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg" allowfullscreen></iframe>
+			<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRfFHwYzzaS4RDNx6e5vsJTI&key=AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg" allowfullscreen></iframe>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

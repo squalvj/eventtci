@@ -15,6 +15,93 @@ h4 {
 .white {
   color: #fff;
 }
+.navbar {
+  border: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.navbar-brand {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #4b4b4b;
+}
+.navbar--size--xl {
+  padding: 2rem 0;
+}
+.navbar--size--lg {
+  padding: 2rem 0;
+}
+.navbar--size--md {
+  padding: 1rem 0;
+}
+.navbar--sm {
+  padding: 0;
+}
+.navbar--color--white {
+  background: #fff;
+}
+.navbar--color--primary {
+  background: #37ca7e;
+}
+.navbar--color--secondary {
+  background: #fff;
+  -webkit-box-shadow: 0px -5px 25px rgba(0,0,0,0.7);
+  box-shadow: 0px -5px 25px rgba(0,0,0,0.7);
+}
+.navbar--color--secondary .navbar-toggle:hover .icon-bar {
+  background-color: #fff;
+}
+.navbar--color--secondary .icon-bar {
+  background-color: #e74c3c;
+}
+.navbar--color--secondary button {
+  color: #eb6f63;
+}
+.navbar--color--secondary button:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  height: 0%;
+  background-color: #eb6f63;
+  left: 0;
+  top: 0;
+}
+.navbar--color--secondary button:hover {
+  color: #fff !important;
+}
+.navbar--color--secondary button:hover:before {
+  height: 100%;
+  z-index: -1;
+}
+.navbar--color--ghost {
+  background: transparent;
+}
+.navbar .navbar-brand,
+.navbar .navbar-text,
+.navbar a {
+  color: #fff;
+}
+.navbar-brand {
+  margin-top: -15px;
+}
+.icon-bar {
+  background-color: #fff;
+}
+.overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+}
 .scrolled {
   width: 100%;
   -webkit-transition: all 0.5s ease;
@@ -351,6 +438,7 @@ h4 {
 .img-testimoni {
   width: 100%;
   border-radius: 700px;
+  border: 5px solid #fff;
 }
 .wrapper-testimoni {
   display: -webkit-box;
@@ -520,93 +608,6 @@ h4 {
   min-height: 500px;
   padding: 35px 0;
 }
-.navbar {
-  border: none;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-.navbar-brand {
-  font-size: 2.25rem;
-  font-weight: 900;
-  color: #4b4b4b;
-}
-.navbar--size--xl {
-  padding: 2rem 0;
-}
-.navbar--size--lg {
-  padding: 2rem 0;
-}
-.navbar--size--md {
-  padding: 1rem 0;
-}
-.navbar--sm {
-  padding: 0;
-}
-.navbar--color--white {
-  background: #fff;
-}
-.navbar--color--primary {
-  background: #37ca7e;
-}
-.navbar--color--secondary {
-  background: #fff;
-  -webkit-box-shadow: 0px -5px 25px rgba(0,0,0,0.7);
-  box-shadow: 0px -5px 25px rgba(0,0,0,0.7);
-}
-.navbar--color--secondary .navbar-toggle:hover .icon-bar {
-  background-color: #fff;
-}
-.navbar--color--secondary .icon-bar {
-  background-color: #e74c3c;
-}
-.navbar--color--secondary button {
-  color: #eb6f63;
-}
-.navbar--color--secondary button:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  height: 0%;
-  background-color: #eb6f63;
-  left: 0;
-  top: 0;
-}
-.navbar--color--secondary button:hover {
-  color: #fff !important;
-}
-.navbar--color--secondary button:hover:before {
-  height: 100%;
-  z-index: -1;
-}
-.navbar--color--ghost {
-  background: transparent;
-}
-.navbar .navbar-brand,
-.navbar .navbar-text,
-.navbar a {
-  color: #fff;
-}
-.navbar-brand {
-  margin-top: -15px;
-}
-.icon-bar {
-  background-color: #fff;
-}
-.overlay {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.6);
-}
 @media (max-width: 480px) {
   .wrapper-slider h2 {
     font-size: 24px !important;
@@ -627,6 +628,25 @@ h4 {
   .wrapper-testimoni {
     padding: 0 15px;
     margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .wrapper-testimoni .wrapper-img-testimoni {
+    width: 100%;
+  }
+  .wrapper-testimoni .wrapper-quote {
+    width: 100%;
+    padding: 0;
+  }
+  .wrapper-testimoni .wrapper-quote > div {
+    position: static;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin-top: 20px;
   }
   #testimonial > .container {
     padding: 55px 0 30px 0;
