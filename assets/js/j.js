@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 	    // And if we need scrollbar
 	    scrollbar: '.swiper-scrollbar',
 	    autoplay: 6000,
-	    autoplayDisableOnInteraction: false
+	    autoplayDisableOnInteraction: true
   	})        
 
 	'use strict';
@@ -104,4 +104,11 @@ jQuery(document).ready(function($) {
 		demo2.start();
 	}
 
+	particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+	  console.log('callback - particles.js config loaded');
+	});   
+
+	$(".wrapper-testimoni").each(function(index) {
+		console.log($(this))	
+	});
 });

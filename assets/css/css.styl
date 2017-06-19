@@ -19,11 +19,12 @@ $white = white;
 $blue = #3498DB;
 $darkBlue = #2980B9;
 $redt = tint($red, 20%)
-$asphalt = #34495e
+$asphalt = #333
 
 h1, h2, h4
 	font-family $patua
-	
+.white
+	color white
 
 .scrolled
 	width 100%
@@ -110,18 +111,20 @@ h1, h2, h4
 	color $asphalt
 	> h4
 		font-family $rale
-		line-height 25px
+		line-height 30px
 .wrapper-5
 	margin 50px 0
 .wrapper-icon
 	font-family $rale
 	font-size 0.8em
+	h5
+		font-size 16px
 	img
 		width 50px
 
 		
 .section-utama
-	height 100vh
+	min-height 100vh
 .swiper-container
 	height 100vh
 	z-index 2
@@ -252,6 +255,148 @@ h1, h2, h4
 		border-left: 30px solid transparent;
 	.img-speaker
 		width 100%
+		
+// section 4
+#particles-js
+	background-color: #333; 
+	position absolute
+	left 0
+	top 0  
+	width 100%
+	height 100%
+	z-index 1
+.wrapper-img-testimoni
+	width 50%
+
+.img-testimoni
+	width 100%
+	border-radius 700px
+
+.wrapper-testimoni
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+
+.wrapper-quote
+	width 50%
+	padding-left 20px
+	position relative
+	> div
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+.flex-reverse
+	flex-direction row-reverse 
+.container-inside
+	max-width 1170px
+	margin 0 auto
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+#testimonial
+	//background-color #34495e
+	min-height 400px
+	width 100%
+	position relative
+	z-index 1
+	overflow hidden
+	> .container
+		position relative
+		z-index 2
+		padding 55px 0
+.title-besar
+	font-size 32px
+	font-family $patua
+	font-weight bold
+	text-align center
+	text-transform uppercase
+	letter-spacing 2px
+.quote
+	font-size 16px
+	font-family $sand
+.quote-name
+	font-size 18px
+	font-family $rale
+	font-weight bold
+	
+// section 5 sponsor
+#sponsor
+	padding 30px 0
+	overflow-x hidden
+.sponsor-category
+	font-size 24px
+	font-family $rale
+	text-align center
+	font-weight bold
+.wrapper-sponsor
+	text-align center
+	img
+		height 150px
+		
+// section 6 layout
+#layout
+	min-height 500px
+	
+// section 7 media
+#mediap
+	padding 30px 0
+.wrapper-media
+	text-align center
+	img
+		width 100%
+	
+// section 8 registration
+#registration
+	width 100%
+	position relative
+	background-color #1abc9c
+	overflow hidden
+	> .container
+		padding 75px 0
+		position relative
+		z-index 5
+	#canvas
+		position absolute
+		left 0
+		top 0
+		z-index 1
+		
+.wrapper-flex-registration
+	display flex
+	flex-direction row
+	justify-content space-between
+	color white
+	padding 0 20px
+	
+	h1
+		font-family $rale
+		font-weight bold
+	p
+		font-family $rale
+		font-size 20px
+.wrapper-registration2
+	display flex
+	a
+		padding 20px 0
+	button
+		padding 20px 30px
+		color white
+		background-color transparent
+		border 2px solid white
+		-webkit-transition: all .25s ease
+		-moz-transition: all .25s ease
+		-ms-transition: all .25s ease
+		-o-transition: all .25s ease
+		transition: all .25s ease
+		&:hover
+			background-color white
+			color $asphalt
+// section 9 map
+#map
+	min-height 500px
+	padding 35px 0
+
 // navbar 
 $primary = #37ca7e;
 $secondary = white//#43a6dd; //ini warna background nav
@@ -279,6 +424,7 @@ $transitionSpeed = 0.4s;
 			background $primary
 		&--secondary
 			background $secondary
+			box-shadow 0px -5px 25px rgba(0,0,0,0.7)
 			.navbar-toggle
 				&:hover
 					.icon-bar
@@ -325,3 +471,31 @@ $transitionSpeed = 0.4s;
 	height 100%
 	width 100%
 	background rgba(#000, 0.6)
+
+
+// responsive androi
+@media (max-width:480px)
+	.wrapper-slider
+		h2
+			font-size 24px !important
+		p
+			font-size 20px !important
+	.wrapper-detail-jumbotron
+		margin 30px 0 !important
+		button
+			width 100%
+			padding 10px 0 !important
+		&:focus
+			outline none
+	.wrapper-testimoni
+		padding 0 15px
+		margin-bottom 50px
+	#testimonial
+		> .container
+			padding 55px 0 30px 0
+	.wrapper-flex-registration
+		flex-direction column
+		a
+			width 100%
+		button
+			width 100%

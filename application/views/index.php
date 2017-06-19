@@ -123,8 +123,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</div>
-				<div class="hidden-xs swiper-button-prev swiper-button-white"></div>
-				<div class="shidden-xs wiper-button-next swiper-button-white"></div>
+				<div class="hidden-xs hidden-sm swiper-button-prev swiper-button-white"></div>
+				<div class="hidden-xs hidden-sm swiper-button-next swiper-button-white"></div>
 				<div class="swiper-pagination swiper-pagination-white"></div>
 				<div class="hidden-xs swiper-scrollbar"></div>
 			</div>
@@ -271,11 +271,359 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
+		<div id="testimonial">
+			<div id="particles-js"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="wrapper-testimoni">
+							<div class="wrapper-img-testimoni">
+								<img class="img-testimoni" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							</div>
+							<div class="wrapper-quote">
+								<div>
+									<p class="quote white">
+										<i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"</i>
+									</p>
+									<h4 class="quote-name white">
+										- Nabillah Indriyani<br>
+										(Member JKT 48)
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="wrapper-testimoni flex-reverse">
+							<div class="wrapper-img-testimoni">
+								<img class="img-testimoni" src="http://oketekno.com/hiburan/wp-content/uploads/2016/06/Kala-Nabilah-JKT48-Berbalut-Atasan-Hitam-Nerawang-1.jpg">
+							</div>
+							<div class="wrapper-quote">
+								<div>
+									<p class="quote white">
+										<i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"</i>
+									</p>
+									<h4 class="quote-name white">
+										- Nabillah Indriyani<br>
+										(Member JKT 48)
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sponsor" class="container">
+			<h1 class="title-besar text-left">
+				Sponsor
+			</h1>
+
+			<h2 class="sponsor-category">
+				Diamond
+			</h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+				</div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+			</div>
+
+			<h2 class="sponsor-category">
+				Gold
+			</h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+				</div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+			</div>
+
+			<h2 class="sponsor-category">
+				Silver
+			</h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+				</div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+			</div>
+
+			<h2 class="sponsor-category">
+				Bronze
+			</h2>
+			<div class="row">
+				<div class="col-xs-12 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+				</div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-2 col-sm-2 col-sm-offset-1 col-md-offset-1">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+				</div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+					<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+		    <div class="col-md-2 col-sm-2 col-xs-6">
+		    	<div class="wrapper-sponsor">
+						<img src="https://ecs7.tokopedia.net/img/microsite-brand-resource/mascot-toped-new.png">
+					</div>
+		    </div>
+			</div>
+		</div>
+
+		<div id="layout">
+
+		</div>
+
+		<div id="mediap" class="container">
+			<h1 class="title-besar text-left">
+				MEDIA PARTNER
+			</h1>
+
+			<div class="row no-margin">
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+			
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="registration">
+			<canvas id="canvas"></canvas>
+			<div class="container">
+				<div class="wrapper-flex-registration">
+					<div class="wrapper-registration">
+						<h1>REGISTRATION FULL DAY ACCESS</h1>
+						<P>Register to get Access to all seminar & activity</P>
+					</div>
+					<div class="wrapper-registration2">
+						<a href="#">
+							<button>REGISTRATION NOW</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg -->
+		<div id="map" class="container">
+			<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRfFHwYzzaS4RDNx6e5vsJTI&key=AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg" allowfullscreen></iframe>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="<?php echo base_url();?>assets/bower_components/countUp.js/dist/countUp.js"></script>
 		<script src="<?php echo base_url();?>assets/bower_components/swiper/dist/js/swiper.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/parallax.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/particles.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/star.js"></script>
 		<script src="<?php echo base_url();?>assets/js/j.js"></script>
 	</body>
 </html>
