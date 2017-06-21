@@ -417,7 +417,10 @@ $transitionSpeed = 0.4s;
 		
 // section 6 layout
 #exhibition
-	min-height 500px
+	min-height 250px
+	width 100%
+	border-bottom 1px solid $black
+	border-top 1px solid $black
 
 	
 // section 7 media
@@ -473,6 +476,11 @@ $transitionSpeed = 0.4s;
 		-ms-transition: all .25s ease
 		-o-transition: all .25s ease
 		transition: all .25s ease
+		transition: box-shadow 0.75s ease
+		-webkit-transition: box-shadow .75s ease
+		-moz-transition: box-shadow .75s ease
+		-ms-transition: box-shadow .75s ease
+		-o-transition: box-shadow .75s ease
 		&:hover
 			background-color white
 			color $asphalt
