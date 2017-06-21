@@ -21,6 +21,7 @@ $blue = #3498DB;
 $darkBlue = #2980B9;
 $redt = tint($red, 20%)
 $asphalt = #333
+$midnight = #2c3e50
 
 h1, h2, h4
 	font-family $patua
@@ -144,11 +145,12 @@ $transitionSpeed = 0.4s;
 .item-nav
 	text-align center
 	font-size 0.6em
-	font-family $montserrat
+	font-family $rale
+	font-weight bolder
 	position relative
 	@media (max-width: 550px)
 		text-align left
-	> button
+	button
 		padding 15px 25px
 		background-color transparent
 		color white
@@ -162,6 +164,8 @@ $transitionSpeed = 0.4s;
 		transition: all .25s ease
 		font-size 1em
 		text-transform uppercase
+		&:focus
+			outline none
 		&:before
 			content ''
 			position absolute
@@ -412,8 +416,9 @@ $transitionSpeed = 0.4s;
 		height 150px
 		
 // section 6 layout
-#layout
+#exhibition
 	min-height 500px
+
 	
 // section 7 media
 #mediap
@@ -475,12 +480,113 @@ $transitionSpeed = 0.4s;
 // section 9 map
 #map
 	min-height 500px
-	padding 35px 0
+	padding 50px 0 50px
+	width 100%
+	background-color $black
+	> .container
+		position relative
+		&:before
+			content ''
+			width 100%
+			height 50px
+			background-color tint(#34495e, 20%)
+			left 0
+			border-radius: 10px 10px 0px 0px;
+			position relative
+			z-index 5
+			box-shadow: 15px 0px 10px -2px rgba(0,0,0,0.3);
+.wrapper-ui
+	position absolute
+	left 20px
+	top 0
+	z-index 10
+	width 85px
+	height 50px
+	display flex
+	flex-direction row
+	justify-content space-around
+	padding 15px 0px 15px;
+	.merah
+		background-color $red
+		width 20px
+		height 20px
+		border-radius 50px
+	.kuning
+		background-color #f1c40f
+		width 20px
+		height 20px
+		border-radius 50px
+	.ijo
+		background-color #2ecc71
+		width 20px
+		height 20px
+		border-radius 50px
 #gmaps
 	width 100%
 	height 500px
+	box-shadow: 5px 5px 20px 10px rgba(0,0,0,0.3);
+	position relative
+	z-index 2
+.abs
+	position absolute
+.wrapper-text-ui
+	position absolute
+	width 97%
+	height 50px
+	top 0
+.text-ui
+	color white
+	top 5px
+	left 0
+	right 0
+	margin auto
+	width: 200px;
+	text-align center
+	font-size 22px
+	font-family $right
+	letter-spacing 3px
+	text-transform uppercase
+	line-height 40px
+	z-index: 5;
 
-
+// footer
+#footer
+	background-color #ecf0f1
+	padding 25px 0
+.text-footer
+	font-family $rale
+	font-size 20px
+	font-weight bold
+	color $black
+	text-transform uppercase
+.logo-footer
+	height 50px
+.wrapper-flex-footer
+	display flex
+	flex-direction column
+	width 150px
+	a
+		text-decoration none
+		color $black
+		position relative
+		&:after
+			content ''
+			width 0%;
+			height 2px
+			background-color $black
+			bottom 0
+			position absolute
+			left 0
+			-webkit-transition: all .25s ease
+			-moz-transition: all .25s ease
+			-ms-transition: all .25s ease
+			-o-transition: all .25s ease
+			transition: all .25s ease
+		&:hover
+			text-decoration none
+			&:after
+				width 100%
+		
 
 // responsive androi
 @media (max-width:480px)
@@ -518,3 +624,6 @@ $transitionSpeed = 0.4s;
 			width 100%
 		button
 			width 100%
+	#footer
+		.col-md-4
+			margin-bottom 35px

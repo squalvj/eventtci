@@ -93,22 +93,38 @@ jQuery(document).ready(function($) {
 		var ex = document.getElementById("exhibitCount");
 		var speak = document.getElementById("speakerCount");
 		var options = {
-		  useEasing : true, 
+		  useEasing : false, 
 		  useGrouping : true, 
 		  separator : ',', 
 		  decimal : '.', 
 		};
-		var demo = new CountUp(ex, 0, 35, 0, 5, options);
-		var demo2 = new CountUp(speak, 0, 12, 0, 5, options);
+		var demo = new CountUp(ex, 0, 35, 0, 1.5, options);
+		var demo2 = new CountUp(speak, 0, 12, 0, 1.5, options);
 		demo.start();
 		demo2.start();
 	}
 
 	particlesJS.load('particles-js', 'assets/js/particles.json', function() {
-	  console.log('callback - particles.js config loaded');
+	 // console.log('callback - particles.js config loaded');
 	});   
 
-	$(".wrapper-testimoni").each(function(index) {
-		console.log($(this))	
-	});
+
+	// scrollspy
+	$(".item-nav a[href^='#']").on('click', function(e) {
+       // prevent default anchor click behavior
+       e.preventDefault();
+
+       // animate
+       $('html, body').animate({
+           scrollTop: $(this.hash).offset().top - 70
+         }, 500, function(){
+   
+           // when done, add hash to url
+           // (default click behaviour)
+           window.location.hash = this.hash;
+         });
+
+    });
+
+    
 });

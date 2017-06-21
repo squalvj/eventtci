@@ -11,6 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/css/css.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/bower_components/swiper/dist/css/swiper.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>assets/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oxygen|Patua+One|Quicksand|Raleway|Righteous|Montserrat|Rubik+Mono+One" rel="stylesheet">
 	</head>
 	<body>
@@ -30,16 +31,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    <div class="collapse navbar-collapse" id="mobileNav">
 		      <div class="navigasi navbar-right">
 						<div class="item-nav">
-							<button>Speaker</button>
+							<a href="#section4"><button>Speaker</button></a>
 						</div>
 						<div class="item-nav">
-							<button>Exhibitor</button>
+							<a href="#"><button>Exhibitor</button></a>
 						</div>
 						<div class="item-nav">
-							<button>Ticket Info</button>
+							<a href="#registration"><button>Ticket Info</button></a>
 						</div>
 						<div class="item-nav">
-							<button>Venue</button>
+							<a href="#map"><button>Venue</button></a>
 						</div>
 					</div>
 		    </div>
@@ -143,25 +144,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
-							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
+							<img class="ico" src="<?php echo base_url(); ?>assets/img/scho.png">
 							<h5>Scholarship</h5>
 						</div>
 			    </div>
 			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
-							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
+							<img class="ico" src="<?php echo base_url(); ?>assets/img/col.png">
 							<h5>College</h5>
 						</div>
 			    </div>
 			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
-							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
+							<img class="ico" src="<?php echo base_url(); ?>assets/img/edu.png">
 							<h5>Education Services</h5>
 						</div>
 			    </div>
 			    <div class="col-md-2 col-sm-2 col-xs-6">
 			    	<div class="wrapper-icon text-center">
-							<img class="ico" src="<?php echo base_url(); ?>assets/img/gov.png">
+							<img class="ico" src="<?php echo base_url(); ?>assets/img/gra.png">
 							<h5>Scholarship Grantee</h5>
 						</div>
 			    </div>
@@ -476,8 +477,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
-		<div id="layout">
+		<div id="exhibition">
+			<div class="container">
 
+			</div>
 		</div>
 
 		<div id="mediap" class="container">
@@ -619,8 +622,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<!-- AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg -->
-		<div id="map" class="container">
-			<iframe id="gmaps" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRfFHwYzzaS4RDNx6e5vsJTI&key=AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg" allowfullscreen></iframe>
+		<div id="map">
+			<div class="container">
+				<div class="abs wrapper-ui">
+					<div class="merah"></div>
+					<div class="kuning"></div>
+					<div class="ijo"></div>
+				</div>
+				
+					<h2 class="abs text-ui no-margin">The Place</h2>
+
+				<iframe id="gmaps" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRfFHwYzzaS4RDNx6e5vsJTI&key=AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h4 class="text-footer">
+							Hosted By:
+						</h4>
+						<img class="logo-footer" src="<?php echo base_url(); ?>assets/img/logo.png">
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h4 class="text-footer">
+							Office:
+						</h4>
+						<h5>Jl Raya Cidodol, No 40 Kebayoran Lama</h5>
+						<h5>Jakarta Selatan, DKI Jakarta</h5>
+						<h5>Indonesia, 12220</h5>
+						<h5>Tlp. (+62) 21-2930-6720</h5>
+						<h5>E-mail : marketing@topcareer.id</h5>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h4 class="text-footer">
+							Sosial media:
+						</h4>
+						<div class="wrapper-flex-footer">
+							<a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+							<a target="_blank" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+							<a target="_blank" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+							<a target="_blank" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
