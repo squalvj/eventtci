@@ -604,19 +604,14 @@ h4 {
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-transition: -webkit-box-shadow 0.75s ease;
-  transition: -webkit-box-shadow 0.75s ease;
-  transition: box-shadow 0.75s ease;
-  transition: box-shadow 0.75s ease, -webkit-box-shadow 0.75s ease;
-  -webkit-transition: box-shadow 0.75s ease;
-  -moz-transition: box-shadow 0.75s ease;
-  -ms-transition: box-shadow 0.75s ease;
-  -o-transition: box-shadow 0.75s ease;
+  -webkit-transition: background-color 0.25s, color 0.25s, -webkit-box-shadow 0.75s ease;
+  transition: background-color 0.25s, color 0.25s, -webkit-box-shadow 0.75s ease;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.75s ease;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.75s ease, -webkit-box-shadow 0.75s ease;
+  -webkit-transition: background-color 0.25s, color 0.25s, box-shadow 0.75s ease;
+  -moz-transition: background-color 0.25s, color 0.25s, box-shadow 0.75s ease;
+  -ms-transition: background-color 0.25s, color 0.25s, box-shadow 0.75s ease;
+  -o-transition: background-color 0.25s, color 0.25s, box-shadow 0.75s ease;
 }
 .wrapper-registration2 button:hover {
   background-color: #fff;
