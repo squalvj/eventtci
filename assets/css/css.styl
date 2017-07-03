@@ -27,6 +27,10 @@ h1, h2, h4
 	font-family $patua
 .white
 	color white
+.text-form
+	font-size 12px
+.relative
+	position relative
 	
 // navbar 
 $primary = #37ca7e;
@@ -209,15 +213,15 @@ $transitionSpeed = 0.4s;
 	height 100vh
 	z-index 2
 .swiper-slide-1
-	background url("../img/1.jpg") center / cover no-repeat
+	background url("../img/HOW TO CHOOSE THE BEST COLLEGE BASED ON INTEREST AND TALENT.jpg") center / cover no-repeat
 .swiper-slide-2
-	background url("../img/2.jpg") center / cover no-repeat
+	background url("../img/WORK FOR INDONESIA OR OTHER COUNTRIES.jpg") center / cover no-repeat
 .swiper-slide-3
-	background url("../img/2.jpg") center / cover no-repeat
+	background url("../img/HOW TO WORK OVERSEAS.jpg") center / cover no-repeat
 .swiper-slide-4
-	background url("../img/2.jpg") center / cover no-repeat
+	background url("../img/SCHOLARSHIP LIST OF 2018.jpg") center / cover no-repeat
 .swiper-slide-5
-	background url("../img/2.jpg") center / cover no-repeat
+	background url("../img/SHARING SESSION  DINO PATTI DJALAL.png") center / cover no-repeat
 .swiper-slide
 	height 100%
 	position relative
@@ -417,10 +421,65 @@ $transitionSpeed = 0.4s;
 		
 // section 6 layout
 #exhibition
-	min-height 250px
 	width 100%
-	border-bottom 1px solid $black
-	border-top 1px solid $black
+	padding 30px 0
+	//background-color #2A2C2B
+	background url("../img/1.jpg") center / cover no-repeat
+	position relative
+	&:before
+		content '';
+		width 100%
+		height 100%
+		position absolute
+		left 0
+		top 0
+		background-color rgba(0,0,0,0.7)
+		z-index 0
+	div.wrapper-exhibition > p:nth-child(3)
+		margin-top 55px
+.wrapper-flex-exhibition
+	display flex
+	position relative
+	flex-direction row
+	justify-content space-between
+	color white
+	padding 0 20px
+	flex-wrap wrap
+	&:before
+		border-radius 200px
+		content: '';
+		background-color: #fff;
+		width: 5px;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 25px;
+	
+	h1
+		font-family $rale
+		font-weight bold
+	p
+		font-family $rale
+		font-size 20px
+.wrapper-exhibition2
+	display flex
+	flex-direction: column-reverse;
+	button
+		padding 20px 15px
+		color white
+		background-color transparent
+		border 2px solid white
+		transition: background-color .25s,color .25s, box-shadow 0.75s ease
+		-webkit-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-moz-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-ms-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-o-transition: background-color .25s,color .25s, box-shadow .75s ease
+		text-transform uppercase
+		font-size 18px
+		&:hover
+			background-color white
+			color $asphalt
+			box-shadow: 0px 0px 40px 0px #fff;
 
 	
 // section 7 media
@@ -589,6 +648,34 @@ $transitionSpeed = 0.4s;
 			text-decoration none
 			&:after
 				width 100%
+				
+// modal proposal
+.container-modal
+	padding 20px
+.radio-flex
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	justify-content space-around
+.radio
+	label
+		font-size 14px !important
+.submit-btn
+	width 100%
+	text-align center
+	button
+		color white
+		background-color #88A0B9
+		padding 10px 35px
+		-webkit-transition: all .25s ease
+		-moz-transition: all .25s ease
+		-ms-transition: all .25s ease
+		-o-transition: all .25s ease
+		transition: all .25s ease
+		border-radius 50px
+		&:hover
+			color darken(white, 10%)
+			border-radius 4px
 		
 
 // responsive androi
@@ -630,3 +717,7 @@ $transitionSpeed = 0.4s;
 	#footer
 		.col-md-4
 			margin-bottom 35px
+	.wrapper-exhibition2
+		width 100%
+		button
+			width 100%

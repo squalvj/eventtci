@@ -12,6 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href="<?php echo base_url(); ?>assets/css/css.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/bower_components/swiper/dist/css/swiper.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>assets/bower_components/izimodal/css/iziModal.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oxygen|Patua+One|Quicksand|Raleway|Righteous|Montserrat|Rubik+Mono+One" rel="stylesheet">
 	</head>
 	<body>
@@ -34,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<a href="#section4"><button>Speaker</button></a>
 						</div>
 						<div class="item-nav">
-							<a href="#"><button>Exhibitor</button></a>
+							<a href="#exhibition"><button>Exhibitor</button></a>
 						</div>
 						<div class="item-nav">
 							<a href="#registration"><button>Ticket Info</button></a>
@@ -49,15 +50,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="section-utama">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide swiper-slide-1">
+					<div class="swiper-slide swiper-slide-5">
 						<div class="container">
 							<div class="wrapper-slider">
-								<h2>Memilih Perguruan Tinggi berdasarkan minat dan bakat</h2> 
-									<p>Bidang pekerjaan dengan masa depan cerah</p>
-
+								<h2>SHARING SESSION : DINO PATTI DJALAL</h2> 
+									<p>Towards global Indonesia</p>
 									<div class="wrapper-detail-jumbotron">
 										<h4>Saturday, Nov 25Th 2017</h4>
-										<h4>10.00 am - 4.00 pm</h4>
+										<h4>03.40 am - 04.10 pm</h4>
 										<button class="btn-jumbotron red-btn">Free Tickets</button>
 										<button class="btn-jumbotron">Featured Speaker</button>
 									</div>
@@ -67,12 +67,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="swiper-slide swiper-slide-2">
 						<div class="container">
 								<div class="wrapper-slider">
-									<h2>Berkarya demi Indonesia atau negara lain</h2> 
-										<p>Ketika pajak rakyat disalahgunakan oleh penerima beasiswa</p>
+									<h2>WORK FOR INDONESIA OR OTHER COUNTRIES</h2> 
+										<p>When the people's tax is misused</p>
 
 										<div class="wrapper-detail-jumbotron">
 											<h4>Saturday, Nov 25Th 2017</h4>
-											<h4>10.00 am - 4.00 pm</h4>
+											<h4>01.00 pm - 01.30 pm</h4>
 											<button class="btn-jumbotron red-btn">Free Tickets</button>
 											<button class="btn-jumbotron">Featured Speaker</button>
 										</div>
@@ -82,12 +82,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="swiper-slide swiper-slide-3">
 						<div class="container">
 							<div class="wrapper-slider">
-								<h2>Jalur berkarier diluar negeri</h2> 
-									<p>Jasa perantara atau penerima langsung?</p>
+								<h2>HOW TO WORK OVERSEAS</h2> 
+									<p>Intermediary service or apply directly?</p>
 
 									<div class="wrapper-detail-jumbotron">
 										<h4>Saturday, Nov 25Th 2017</h4>
-										<h4>10.00 am - 4.00 pm</h4>
+										<h4>2.20 am - 2.50 pm</h4>
 										<button class="btn-jumbotron red-btn">Free Tickets</button>
 										<button class="btn-jumbotron">Featured Speaker</button>
 									</div>
@@ -97,26 +97,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="swiper-slide swiper-slide-4">
 						<div class="container">
 							<div class="wrapper-slider">
-								<h2>Daftar beasiswa tahun 2018</h2> 
-									<p>Ciri penerima beasiswa</p>
+								<h2>SCHOLARSHIP LIST OF 2018</h2> 
+									<p>Characteristic of the scholarship recipient</p>
 
 									<div class="wrapper-detail-jumbotron">
 										<h4>Saturday, Nov 25Th 2017</h4>
-										<h4>10.00 am - 4.00 pm</h4>
+										<h4>11.40 am - 03.40 pm</h4>
 										<button class="btn-jumbotron red-btn">Free Tickets</button>
 										<button class="btn-jumbotron">Featured Speaker</button>
 									</div>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide swiper-slide-5">
+					<div class="swiper-slide swiper-slide-1">
 						<div class="container">
 							<div class="wrapper-slider">
-								<h2>Sharing session: Dino Patti Djalal</h2> 
-									<p>Menuju Indonesia Global</p>
+								<h2>HOW TO CHOOSE THE BEST COLLEGE BASED ON INTEREST AND TALENT</h2> 
+									<p>Profession with a bright future</p>
+
 									<div class="wrapper-detail-jumbotron">
 										<h4>Saturday, Nov 25Th 2017</h4>
-										<h4>10.00 am - 4.00 pm</h4>
+										<h4>11.00 am - 11.30 pm</h4>
 										<button class="btn-jumbotron red-btn">Free Tickets</button>
 										<button class="btn-jumbotron">Featured Speaker</button>
 									</div>
@@ -479,14 +480,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div id="exhibition">
 			<div class="container">
-
+				<div class="wrapper-flex-exhibition">
+					<div class="wrapper-exhibition col-md-9 no-padding">
+						<h1>Exhibit at Global Career & Education Fair</h1>
+						<P>Projected to attract over 3,500 visitors, Global Career & Education Fair provides participants with the perfect opportunity to meet scholarship grantee, students who want to study abroad and parents.</P>
+						<p>Don’t get left behind – book your spot now.<br>Contact : marketing@topcareer.id</p>
+					</div>
+					<div class="wrapper-exhibition2 col-md-3 no-padding">
+						<a href="#" class="trigger-proposal" data-izimodal-transitionin="fadeInDown">
+							<button>Request for proposal</button>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div id="mediap" class="container">
-			<h1 class="title-besar text-left">
-				MEDIA PARTNER
-			</h1>
+			<h1 class="title-besar text-left">Booth Participant</h1>
 
 			<div class="row no-margin">
 				<div class="col-md-2 col-sm-2 col-xs-3">
@@ -614,13 +624,125 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="section-2-flex">
-				<div class="item-section-2-flex">
-					
+		<!-- media partner -->
+		<div id="mediap" class="container">
+			<h1 class="title-besar text-left">
+				MEDIA PARTNER
+			</h1>
+
+			<div class="row no-margin">
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
+				</div>
+			
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="wrapper-media">
+						<img src="http://pngimg.com/uploads/samsung_logo/samsung_logo_PNG14.png">
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg -->
 		<div id="map">
 			<div class="container">
@@ -630,7 +752,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="ijo"></div>
 				</div>
 				
-					<h2 class="abs text-ui no-margin">The Place</h2>
+					<h2 class="abs text-ui no-margin">VENUE</h2>
 
 				<iframe id="gmaps" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRfFHwYzzaS4RDNx6e5vsJTI&key=AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg" allowfullscreen>
 				</iframe>
@@ -661,10 +783,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Sosial media:
 						</h4>
 						<div class="wrapper-flex-footer">
-							<a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-							<a target="_blank" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
-							<a target="_blank" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
-							<a target="_blank" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
+							<a target="_blank" href="https://www.instagram.com/topcareerid/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+							<a target="_blank" href="https://www.facebook.com/TopCareerID"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+							<a target="_blank" href="https://twitter.com/TopCareerId/"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+							<a target="_blank" href="https://www.youtube.com/channel/UCYHv20OqWY3orb0RjztKkmQ"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
 						</div>
 						
 					</div>
@@ -672,6 +794,85 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
+		<div id="modal-proposal">
+			<div class="container-modal">
+				<div class="row">
+					<form id="form-proposal" class="form-horizontal" action="<?php echo base_url();?>proposal" method="get">
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="formGroupInputLarge">Nama</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="text" name="nama" placeholder="Nama..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="email">Email</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="email" name="email" placeholder="Email..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="telp">Telepon</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="number" name="telp" placeholder="Telepon..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-10 col-sm-offset-2 text-form" style="margin-left:30px;" for="telp">Where you get information about Global Career & Education Fair from ?</label>
+					    <div style="margin-left: 15px" class="col-sm-11">
+					      <div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="poster" checked>
+								    Poster
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="facebook topcareer">
+								    Facebook pages topcareer.id
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="facebook ads">
+								    Facebook Ads
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="google ads">
+								    Google Ads
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="instagram topcareer">
+								    Instagram Topcareer.id
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="other instagram account">
+								    Other Instagram Account
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input class="lainnya" type="radio" name="proposal" value="other">
+								    Other...
+								  </label>
+								</div>
+								<div class="radio other col-sm-6 hide relative">
+							    <input class="other9 form-control" type="text" name="other" placeholder="Lainnya...">
+								</div>
+					    </div>
+					  </div>
+					  <div class="submit-btn">
+					  	<button id="submit-proposal" type="submit" class="btn">Download</button>
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="<?php echo base_url();?>assets/bower_components/countUp.js/dist/countUp.js"></script>
@@ -679,6 +880,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="<?php echo base_url();?>assets/js/parallax.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/particles.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/star.js"></script>
+		<script src="<?php echo base_url();?>assets/bower_components/izimodal/js/iziModal.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/j.js"></script>
 	</body>
 </html>

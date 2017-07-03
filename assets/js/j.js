@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
 	//     }
  //  	});
 
-
  	var mySwiper = new Swiper ('.swiper-container', {
 	    // Optional parameters
 	    direction: 'horizontal',
@@ -98,8 +97,8 @@ jQuery(document).ready(function($) {
 		  separator : ',', 
 		  decimal : '.', 
 		};
-		var demo = new CountUp(ex, 0, 35, 0, 1.5, options);
-		var demo2 = new CountUp(speak, 0, 12, 0, 1.5, options);
+		var demo = new CountUp(ex, 0, 34, 0, 1.5, options);
+		var demo2 = new CountUp(speak, 0, 11, 0, 1.5, options);
 		demo.start();
 		demo2.start();
 	}
@@ -126,5 +125,84 @@ jQuery(document).ready(function($) {
 
     });
 
+	$("#modal-proposal").iziModal({
+		title: 'Request Proposal',
+	    subtitle: '',
+	    headerColor: '#88A0B9',
+	    theme: '',  // light
+	    appendTo: 'false', // or false
+	    icon: null,
+	    iconText: null,
+	    iconColor: '',
+	    rtl: false,
+	    //width: "50%",
+	    top: null,
+	    bottom: null,
+	    borderBottom: true,
+	    padding: 0,
+	    radius: 3,
+	    zindex: 9999,
+	    iframe: false,
+	    iframeHeight: 400,
+	    iframeURL: null,
+	    focusInput: true,
+	    group: '',
+	    loop: false,
+	    navigateCaption: true,
+	    navigateArrows: true, // Boolean, 'closeToModal', 'closeScreenEdge'
+	    history: false,
+	    restoreDefaultContent: false,
+	    autoOpen: 0, // Boolean, Number
+	    bodyOverflow: false,
+	    fullscreen: false,
+	    openFullscreen: false,
+	    closeOnEscape: true,
+	    closeButton: true,
+	    overlay: true,
+	    overlayClose: true,
+	    overlayColor: 'rgba(0, 0, 0, 0.4)',
+	    timeout: false,
+	    timeoutProgressbar: false,
+	    pauseOnHover: false,
+	    timeoutProgressbarColor: 'rgba(255,255,255,0.5)',
+	    transitionIn: 'comingIn',
+	    transitionOut: 'comingOut',
+	    transitionInOverlay: 'fadeIn',
+	    transitionOutOverlay: 'fadeOut',
+	    onFullscreen: function(){},
+	    onResize: function(){},
+	    onOpening: function(){},
+	    onOpened: function(){},
+	    onClosing: function(){},
+	    onClosed: function(){}
+	});
+	$(document).on('click', '.trigger-proposal', function (event) {
+	    event.preventDefault();
+	    $('#modal-proposal').iziModal('open');
+	});
     
+    $('input[type=radio][name=proposal]').change(function() {
+        if (this.value == 'other')
+        	$(".other").removeClass('hide')
+        else
+        	$(".other").addClass('hide')
+    });
+
+    $(document).bind('change', function(e){
+    if( $(e.target).is(':invalid') ){
+        $(e.target).parent().addClass('has-error');
+    } else {
+        $(e.target).parent().removeClass('has-error');
+    }
+    
+    $('form#form-proposal #submit-proposal').click(function(event) { // <- goes here !
+	    if ($(".other9").val().length <= 0 && $(".lainnya").is(':checked')){
+	    	$(".other9").parent().addClass('has-error')
+	        event.preventDefault();
+	    }
+	    else {
+	    	$(".lainnya").val($(".other9").val());   	
+	    }   
+	});
+});
 });
