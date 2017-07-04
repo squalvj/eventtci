@@ -18,7 +18,7 @@ class Index extends CI_Controller {
 		$this->load->helper('download');
 		$name = 'regs.txt';
 		$data = file_get_contents("./assets/pdf/reg.txt");
-		force_download($name, $data);
-		redirect('index');
+		//force_download($name, $data);
+	 	redirect(base_url());
 	}
 }
