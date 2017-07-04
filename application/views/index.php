@@ -797,7 +797,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="modal-proposal">
 			<div class="container-modal">
 				<div class="row">
-					<form id="form-proposal" class="form-horizontal" action="<?php echo base_url();?>proposal" method="get">
+					<form id="form-proposal" class="form-horizontal" action="<?php echo base_url();?>proposal" method="post">
 					  <div class="form-group form-group-sm">
 					    <label class="col-sm-2 control-label" for="formGroupInputLarge">Nama</label>
 					    <div class="col-sm-9">

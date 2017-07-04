@@ -154,7 +154,7 @@ jQuery(document).ready(function($) {
 	    restoreDefaultContent: false,
 	    autoOpen: 0, // Boolean, Number
 	    bodyOverflow: false,
-	    fullscreen: false,
+	    fullscreen: true,
 	    openFullscreen: false,
 	    closeOnEscape: true,
 	    closeButton: true,
