@@ -9,18 +9,130 @@ $sand = "Quicksand", Helvetica
 $rale = "Raleway", Helvetica
 $oxygen = "Oxygen", Helvetica
 $patua = "Patua one", Helvetica
+$mont = "Montserrat", Helvetica
 $right = "Righteous", Helvetica //boldnya mantap
+$montserrat = "Montserrat", Helvetica
 $black = #2C3E50;
 $red = #E74C3C;
+$rubick = 'Rubik Mono One', Helvetica
 // $white = #ECF0F1;
 $white = white;
 $blue = #3498DB;
 $darkBlue = #2980B9;
+$redt = tint($red, 20%)
+$asphalt = #333
+$midnight = #2c3e50
 
 
 h1, h2, h4
 	font-family $patua
+.white
+	color white
+.text-form
+	font-size 12px
+.relative
+	position relative
+	
+// navbar 
+$primary = #37ca7e;
+$secondary = white//#43a6dd; //ini warna background nav
+$transitionSpeed = 0.4s;
+.navbar
+	border none
+	transition $transitionSpeed
+	&-brand
+		font-size 2.25rem
+		font-weight 900
+		color #4b4b4b
+	&--size
+		&--xl
+			padding 2rem 0
+		&--lg
+			padding 2rem 0
+		&--md
+			padding 1rem 0
+	    &--sm
+			padding 0
+	&--color
+		&--white
+			background white
+		&--primary
+			background $primary
+		&--secondary
+			background $secondary
+			box-shadow 0px -5px 25px rgba(0,0,0,0.7)
+			.navbar-toggle
+				&:hover
+					.icon-bar
+						background-color white
+			.icon-bar
+				background-color $red
+			button
+				color $redt !important
+				&:before
+					content ''
+					position absolute
+					width 100%
+					-webkit-transition: all .25s ease
+					-moz-transition: all .25s ease
+					-ms-transition: all .25s ease
+					-o-transition: all .25s ease
+					transition: all .25s ease
+					height 0%
+					background-color $redt
+					left 0
+					top 0
+				&:hover
+					color white !important
+					&:before
+						height 100%
+						z-index -1
+		&--ghost
+			background transparent
+	  		.navbar-brand,
+			.navbar-text,
+			a 
+				color white     
+.navbar-brand
+	margin-top -15px   
+      
+.icon-bar
+	background-color white
+	
+.overlay
+	position absolute
+	z-index -1
+	top 0
+	left 0
+	height 100%
+	width 100%
+	background rgba(#000, 0.6)
 
+.scrolled
+	width 100%
+	-webkit-transition: all .50s ease
+	-moz-transition: all .50s ease
+	-ms-transition: all .50s ease
+	-o-transition: all .50s ease
+	transition: all .50s ease 
+	transform translateY(100)
+	position fixed
+	top 0;
+	left 0
+	height 120px
+	background-color lightblue 
+	
+.nav-up
+	top -130px
+
+#section1
+	-webkit-transition: all .50s ease
+	-moz-transition: all .50s ease
+	-ms-transition: all .50s ease
+	-o-transition: all .50s ease
+	transition: all .50s ease 
+	position fixed
+	width 100%
 .parent-section1
 	max-width 1200px
 	margin 35px auto
@@ -30,66 +142,583 @@ h1, h2, h4
 	flex-direction row
 	justify-content space-between
 	flex-start end
+	width 65%
+	@media (max-width: 550px)
+		flex-direction column
+		width 100%
+		padding-top 20px
 .item-nav
 	text-align center
-	font-size 0.7em
-	font-family $patua
+	font-size 0.6em
+	font-family $rale
+	font-weight bolder
 	position relative
-	> button
+	@media (max-width: 550px)
+		text-align left
+	button
 		padding 15px 25px
-		background-color $red
-		color $white
+		background-color transparent
+		color white
 		letter-spacing 2px
-		border-radius 30px 0
-		border 0
+		border none
 		position relative
 		-webkit-transition: all .25s ease
 		-moz-transition: all .25s ease
 		-ms-transition: all .25s ease
 		-o-transition: all .25s ease
 		transition: all .25s ease
-		&:hover
-			border-radius 0
-			&:after
-				width 100%
-		&:after
-			content '';
-			width 0%;
-			height 5px;
+		font-size 1em
+		text-transform uppercase
+		&:focus
+			outline none
+		&:before
+			content ''
 			position absolute
-			background-color $red
-			bottom -10px
+			width 100%
+			-webkit-transition: all .25s ease
+			-moz-transition: all .25s ease
+			-ms-transition: all .25s ease
+			-o-transition: all .25s ease
+			transition: all .25s ease
+			height 0%
+			background-color $redt
+			left 0
+			top 0
+		&:hover
+			color white
+			&:before
+				height 100%
+				z-index -1
+		
+
+#section2
+	margin 30px 0
+	color $asphalt
+	> h4
+		font-family $rale
+		line-height 30px
+.wrapper-5
+	margin 50px 0
+.wrapper-icon
+	font-family $rale
+	font-size 0.8em
+	h5
+		font-size 16px
+	img
+		width 50px
+
+		
+.section-utama
+	min-height 100vh
+.swiper-container
+	height 100vh
+	z-index 2
+.swiper-slide-1
+	background url("../img/HOW TO CHOOSE THE BEST COLLEGE BASED ON INTEREST AND TALENT.jpg") center / cover no-repeat
+.swiper-slide-2
+	background url("../img/WORK FOR INDONESIA OR OTHER COUNTRIES.jpg") center / cover no-repeat
+.swiper-slide-3
+	background url("../img/HOW TO WORK OVERSEAS.jpg") center / cover no-repeat
+.swiper-slide-4
+	background url("../img/SCHOLARSHIP LIST OF 2018.jpg") center / cover no-repeat
+.swiper-slide-5
+	background url("../img/SHARING SESSION  DINO PATTI DJALAL.png") center / cover no-repeat
+.swiper-slide
+	height 100%
+	position relative
+	display flex
+	justify-content center
+	align-items center
+	&:before
+		content '';
+		width 100%
+		height 100%
+		position absolute
+		left 0
+		top 0
+		background-color rgba(0,0,0,0.7)
+		z-index 1
+	.container
+		height: auto;
+		z-index 99
+		position relative
+		color white
+		.wrapper-slider
+			height 350px
+			margin auto 0
+			> h2
+				font-family $mont
+				font-weight bold
+				text-transform uppercase
+				font-size 40px
+				color tint($red,20%)
+			> p
+				font-family $rale
+				color white
+		.wrapper-detail-jumbotron
+			margin 60px 0
+			h4
+				font-family $rale
+				
+			button.btn-jumbotron
+				margin-top 20px
+				background-color transparent
+				padding 15px 25px
+				color white
+				border 2px solid white
+				font-size 0.8em
+				-webkit-transition: all .25s ease
+				-moz-transition: all .25s ease
+				-ms-transition: all .25s ease
+				-o-transition: all .25s ease
+				transition: all .25s ease
+				&:hover
+					background-color white
+					color $red
+			.red-btn
+				background-color tint($red,20%) !important
+				color white
+				border 2px solid tint($red, 20%) !important
+				&:hover
+					color $red !important
+					background-color white !important
+					border 2px solid white !important
+					
+// section 3
+#section3
+	padding 30px 0
+.wrapper-fluid
+	max-width 1170px
+	min-height 150px
+	margin 0 auto
+	padding 55px 0
+	@media (max-width: 785px)
+		padding 0
+.flex-column
+	display flex
+	flex-direction row
+	justify-content center
+	@media (max-width: 785px)
+		justify-content flex-start
+		align-items center
+		margin: 20px 0;
+.ico-3
+	margin-right 10px
+	height 50px
+.text-3
+	font-size 1.5em
+	color white
+	font-family $sand
+	margin 0
+	@media (max-width: 996px)
+		font-size 3.2vw
+	@media (max-width: 770px)
+		font-size 1.4em
+		
+// section 4
+#section4
+	min-height 500px
+	margin 30px 0
+.featuredSpeaker
+	color $asphalt
+	font-family $mont
+	font-weight bold
+	text-transform uppercase
+	margin-bottom 30px
+.wrapper-speaker
+	display block
+	margin-bottom 50px;
+	position relative
+	&:after
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom 0
+		width: 0;
+		height: 0;
+		border-bottom: 30px solid #34495e;
+		border-left: 30px solid transparent;
+	.img-speaker
+		width 100%
+		
+// section 4
+#particles-js
+	background-color: #333; 
+	position absolute
+	left 0
+	top 0  
+	width 100%
+	height 100%
+	z-index 1
+.wrapper-img-testimoni
+	width 50%
+
+.img-testimoni
+	width 100%
+	border-radius 700px
+	border 5px solid white
+
+.wrapper-testimoni
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+
+.wrapper-quote
+	width 50%
+	padding-left 20px
+	position relative
+	> div
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+.flex-reverse
+	flex-direction row-reverse 
+.container-inside
+	max-width 1170px
+	margin 0 auto
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+#testimonial
+	//background-color #34495e
+	min-height 400px
+	width 100%
+	position relative
+	z-index 1
+	overflow hidden
+	> .container
+		position relative
+		z-index 2
+		padding 55px 0
+.title-besar
+	font-size 32px
+	font-family $patua
+	font-weight bold
+	text-align center
+	text-transform uppercase
+	letter-spacing 2px
+.quote
+	font-size 16px
+	font-family $sand
+.quote-name
+	font-size 18px
+	font-family $rale
+	font-weight bold
+	
+// section 5 sponsor
+#sponsor
+	padding 30px 0
+	overflow-x hidden
+.sponsor-category
+	font-size 24px
+	font-family $rale
+	text-align center
+	font-weight bold
+.wrapper-sponsor
+	text-align center
+	img
+		height 150px
+		
+// section 6 layout
+#exhibition
+	width 100%
+	padding 30px 0
+	//background-color #2A2C2B
+	background url("../img/1.jpg") center / cover no-repeat
+	position relative
+	&:before
+		content '';
+		width 100%
+		height 100%
+		position absolute
+		left 0
+		top 0
+		background-color rgba(0,0,0,0.7)
+		z-index 0
+	div.wrapper-exhibition > p:nth-child(3)
+		margin-top 55px
+.wrapper-flex-exhibition
+	display flex
+	position relative
+	flex-direction row
+	justify-content space-between
+	color white
+	padding 0 20px
+	flex-wrap wrap
+	&:before
+		border-radius 200px
+		content: '';
+		background-color: #fff;
+		width: 5px;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 25px;
+	
+	h1
+		font-family $rale
+		font-weight bold
+	p
+		font-family $rale
+		font-size 20px
+.wrapper-exhibition2
+	display flex
+	flex-direction: column-reverse;
+	button
+		padding 20px 15px
+		color white
+		background-color transparent
+		border 2px solid white
+		transition: background-color .25s,color .25s, box-shadow 0.75s ease
+		-webkit-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-moz-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-ms-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-o-transition: background-color .25s,color .25s, box-shadow .75s ease
+		text-transform uppercase
+		font-size 18px
+		&:hover
+			background-color white
+			color $asphalt
+			box-shadow: 0px 0px 40px 0px #fff;
+
+	
+// section 7 media
+#mediap
+	padding 30px 0
+.wrapper-media
+	text-align center
+	img
+		width 100%
+	
+// section 8 registration
+#registration
+	width 100%
+	position relative
+	background-color black
+	overflow hidden
+	box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.7);
+	> .container
+		padding 75px 0
+		position relative
+		z-index 5
+	#canvas
+		position absolute
+		left 0
+		top 0
+		z-index 1
+		
+.wrapper-flex-registration
+	display flex
+	flex-direction row
+	justify-content space-between
+	color white
+	padding 0 20px
+	
+	h1
+		font-family $rale
+		font-weight bold
+		text-shadow: 0px 0px 15px white;
+	p
+		font-family $rale
+		font-size 20px
+.wrapper-registration2
+	display flex
+	a
+		padding 20px 0
+	button
+		padding 20px 30px
+		color white
+		background-color transparent
+		border 2px solid white
+		transition: background-color .25s,color .25s, box-shadow 0.75s ease
+		-webkit-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-moz-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-ms-transition: background-color .25s,color .25s, box-shadow .75s ease
+		-o-transition: background-color .25s,color .25s, box-shadow .75s ease
+		&:hover
+			background-color white
+			color $asphalt
+			box-shadow: 0px 0px 40px 0px #fff;
+// section 9 map
+#map
+	min-height 500px
+	padding 50px 0 50px
+	width 100%
+	background-color $black
+	> .container
+		position relative
+		&:before
+			content ''
+			width 100%
+			height 50px
+			background-color tint(#34495e, 20%)
+			left 0
+			border-radius: 10px 10px 0px 0px;
+			position relative
+			z-index 5
+			box-shadow: 15px 0px 10px -2px rgba(0,0,0,0.3);
+.wrapper-ui
+	position absolute
+	left 20px
+	top 0
+	z-index 10
+	width 85px
+	height 50px
+	display flex
+	flex-direction row
+	justify-content space-around
+	padding 15px 0px 15px;
+	.merah
+		background-color $red
+		width 20px
+		height 20px
+		border-radius 50px
+	.kuning
+		background-color #f1c40f
+		width 20px
+		height 20px
+		border-radius 50px
+	.ijo
+		background-color #2ecc71
+		width 20px
+		height 20px
+		border-radius 50px
+#gmaps
+	width 100%
+	height 500px
+	box-shadow: 5px 5px 20px 10px rgba(0,0,0,0.3);
+	position relative
+	z-index 2
+.abs
+	position absolute
+.wrapper-text-ui
+	position absolute
+	width 97%
+	height 50px
+	top 0
+.text-ui
+	color white
+	top 5px
+	left 0
+	right 0
+	margin auto
+	width: 200px;
+	text-align center
+	font-size 22px
+	font-family $right
+	letter-spacing 3px
+	text-transform uppercase
+	line-height 40px
+	z-index: 5;
+
+// footer
+#footer
+	background-color #ecf0f1
+	padding 25px 0
+.text-footer
+	font-family $rale
+	font-size 20px
+	font-weight bold
+	color $black
+	text-transform uppercase
+.logo-footer
+	height 50px
+.wrapper-flex-footer
+	display flex
+	flex-direction column
+	width 150px
+	a
+		text-decoration none
+		color $black
+		position relative
+		&:after
+			content ''
+			width 0%;
+			height 2px
+			background-color $black
+			bottom 0
+			position absolute
 			left 0
 			-webkit-transition: all .25s ease
 			-moz-transition: all .25s ease
 			-ms-transition: all .25s ease
 			-o-transition: all .25s ease
 			transition: all .25s ease
+		&:hover
+			text-decoration none
+			&:after
+				width 100%
+				
+// modal proposal
+.container-modal
+	padding 20px
+.radio-flex
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	justify-content space-around
+.radio
+	label
+		font-size 14px !important
+.submit-btn
+	width 100%
+	text-align center
+	button
+		color white
+		background-color #88A0B9
+		padding 10px 35px
+		-webkit-transition: all .25s ease
+		-moz-transition: all .25s ease
+		-ms-transition: all .25s ease
+		-o-transition: all .25s ease
+		transition: all .25s ease
+		border-radius 50px
+		&:hover
+			color darken(white, 10%)
+			border-radius 4px
 		
-.jumbo-1
-	margin 30px 0
-	color $white
-	position relative
-	background-color transparent
-	box-shadow 0px 10px 30px -3px rgba(0,0,0,0.5)
-	overflow hidden
-.wrapper-jumbotron
-	max-width 1200px
-	margin 0 auto
-	> h2
-		font-family $sand
-		font-weight bold
-.wrapper-detail-jumbotron
-	margin 60px 0
-	> button
-		margin-top 20px
-		background-color #e74127
-		padding 15px 25px
-		color $white
-		border 2px solid $white
-		font-size 0.8em
-#section2
-	margin 30px 0
-	> h4
-		font-family $rale
-		line-height 25px
+
+// responsive androi
+@media (max-width:480px)
+	.wrapper-slider
+		h2
+			font-size 24px !important
+		p
+			font-size 20px !important
+	.wrapper-detail-jumbotron
+		margin 30px 0 !important
+		button
+			width 100%
+			padding 10px 0 !important
+		&:focus
+			outline none
+	.wrapper-testimoni
+		padding 0 15px
+		margin-bottom 50px
+		flex-direction column
+		.wrapper-img-testimoni
+			width 100%
+		.wrapper-quote
+			width 100%
+			padding 0
+			> div
+				position: static
+				transform none
+				margin-top 20px
+	#testimonial
+		> .container
+			padding 55px 0 0 0
+	.wrapper-flex-registration
+		flex-direction column
+		a
+			width 100%
+		button
+			width 100%
+	#footer
+		.col-md-4
+			margin-bottom 35px
+	.wrapper-exhibition2
+		width 100%
+		button
+			width 100%
