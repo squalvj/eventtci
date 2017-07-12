@@ -13,6 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href="<?php echo base_url(); ?>assets/bower_components/swiper/dist/css/swiper.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/bower_components/izimodal/css/iziModal.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>assets/bower_components/datepicker/dist/datepicker.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oxygen|Patua+One|Quicksand|Raleway|Righteous|Montserrat|Rubik+Mono+One" rel="stylesheet">
 	</head>
 	<body>
@@ -618,8 +619,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<P>Register to get Access to all seminar & activity</P>
 					</div>
 					<div class="wrapper-registration2">
-						<a href="#">
-							<button>REGISTRATION NOW</button>
+						<a href="#" class="trigger-user" data-izimodal-transitionin="fadeInDown">
+							<button>REGISTER NOW</button>
 						</a>
 					</div>
 				</div>
@@ -873,6 +874,106 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
+
+		<!-- modal user -->
+		<div id="modal-user">
+			<div class="container-modal">
+				<div class="row">
+					<form id="form-proposal" class="form-horizontal" action="<?php echo base_url();?>user" method="post">
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="formGroupInputLarge">Nama</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="text" name="nama" placeholder="Nama..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="email">Email</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="email" name="email" placeholder="Email..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="telp">Telepon</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="number" name="telp" placeholder="Telepon..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="telp">Date Of Birth</label>
+					    <div class="col-sm-9">
+					      <div class="input-group">
+				            <input data-toggle="datepicker" type="text" class="form-control" name="date" placeholder="Date of Birth..." required>
+				            <span class="input-group-btn">
+				              <button type="button" class="btn btn-default btn-sm" disabled="">
+				                <i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>
+				              </button>
+				            </span>
+				          </div>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-2 control-label" for="city">City</label>
+					    <div class="col-sm-9">
+					      <input class="form-control proposal-text" type="text" name="city" placeholder="City..." required>
+					    </div>
+					  </div>
+					  <div class="form-group form-group-sm">
+					    <label class="col-sm-10 col-sm-offset-2 text-form" style="margin-left:30px;" for="telp">Where you get information about Global Career & Education Fair from ?</label>
+					    <div style="margin-left: 15px" class="col-sm-11">
+					      <div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="poster" checked>
+								    Poster
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="facebook topcareer">
+								    Facebook pages topcareer.id
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="facebook ads">
+								    Facebook Ads
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="google ads">
+								    Google Ads
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="instagram topcareer">
+								    Instagram Topcareer.id
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input type="radio" name="proposal" value="other instagram account">
+								    Other Instagram Account
+								  </label>
+								</div>
+								<div class="radio col-sm-6">
+								  <label>
+								    <input class="lainnya" type="radio" name="proposal" value="other">
+								    Other...
+								  </label>
+								</div>
+								<div class="radio other col-sm-6 hide relative">
+							    <input class="other9 form-control" type="text" name="other" placeholder="Lainnya...">
+								</div>
+					    </div>
+					  </div>
+					  <div class="submit-btn">
+					  	<button id="submit-proposal" type="submit" class="btn">Download</button>
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="<?php echo base_url();?>assets/bower_components/countUp.js/dist/countUp.js"></script>
@@ -881,6 +982,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="<?php echo base_url();?>assets/js/particles.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/star.js"></script>
 		<script src="<?php echo base_url();?>assets/bower_components/izimodal/js/iziModal.min.js"></script>
+		<script src="<?php echo base_url();?>assets/bower_components/datepicker/dist/datepicker.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/j.js"></script>
 	</body>
 </html>
