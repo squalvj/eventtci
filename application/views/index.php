@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="section-utama">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide swiper-slide-5">
+					<!-- <div class="swiper-slide swiper-slide-5">
 						<div class="container">
 							<div class="wrapper-slider">
 								<h2>SHARING SESSION : DINO PATTI DJALAL</h2> 
@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="swiper-slide swiper-slide-2">
 						<div class="container">
 								<div class="wrapper-slider">
@@ -172,7 +172,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
-		<div id="section3" class="container-fluid">
+		<!-- <div id="section3" class="container-fluid">
 			<div class="wrapper-fluid">
 				<div class="row no-margin">
 					<div class="col-xs-12 col-md-4 col-sm-4">
@@ -195,9 +195,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>	
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="container">
+		<!-- <div class="container">
 			<div id="section4">
 				<div class="row">
 					<div class="col-md-12">
@@ -272,9 +272,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div id="testimonial">
+		<!-- <div id="testimonial">
 			<div id="particles-js"></div>
 			<div class="container">
 				<div class="row">
@@ -320,9 +320,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div id="sponsor" class="container">
+		<!-- <div id="sponsor" class="container">
 			<h1 class="title-besar text-left">
 				Sponsor
 			</h1>
@@ -477,7 +477,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 		    </div>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="exhibition">
 			<div class="container">
@@ -628,7 +628,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 		<!-- media partner -->
-		<div id="mediap" class="container">
+		<!-- <div id="mediap" class="container">
 			<h1 class="title-besar text-left">
 				MEDIA PARTNER
 			</h1>
@@ -742,7 +742,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- AIzaSyBr5rNuIroLw38LsiSXAqSsVNz6UaKpnjg -->
 		<div id="map">
