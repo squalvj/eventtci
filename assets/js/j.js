@@ -181,6 +181,62 @@ jQuery(document).ready(function($) {
 	    $('#modal-proposal').iziModal('open');
 	});
     
+	$("#modal-user").iziModal({
+		title: 'Pre Registration',
+	    subtitle: '',
+	    headerColor: '#88A0B9',
+	    theme: '',  // light
+	    appendTo: 'false', // or false
+	    icon: null,
+	    iconText: null,
+	    iconColor: '',
+	    rtl: false,
+	    width: "700px",
+	    top: null,
+	    bottom: null,
+	    borderBottom: true,
+	    padding: 0,
+	    radius: 3,
+	    zindex: 9999,
+	    iframe: false,
+	    iframeHeight: 400,
+	    iframeURL: null,
+	    focusInput: true,
+	    group: '',
+	    loop: false,
+	    navigateCaption: true,
+	    navigateArrows: true, // Boolean, 'closeToModal', 'closeScreenEdge'
+	    history: false,
+	    restoreDefaultContent: false,
+	    autoOpen: 0, // Boolean, Number
+	    bodyOverflow: false,
+	    fullscreen: true,
+	    openFullscreen: false,
+	    closeOnEscape: true,
+	    closeButton: true,
+	    overlay: true,
+	    overlayClose: true,
+	    overlayColor: 'rgba(0, 0, 0, 0.4)',
+	    timeout: false,
+	    timeoutProgressbar: false,
+	    pauseOnHover: false,
+	    timeoutProgressbarColor: 'rgba(255,255,255,0.5)',
+	    transitionIn: 'comingIn',
+	    transitionOut: 'comingOut',
+	    transitionInOverlay: 'fadeIn',
+	    transitionOutOverlay: 'fadeOut',
+	    onFullscreen: function(){},
+	    onResize: function(){},
+	    onOpening: function(){},
+	    onOpened: function(){},
+	    onClosing: function(){},
+	    onClosed: function(){}
+	});
+	$(document).on('click', '.trigger-user', function (event) {
+	    event.preventDefault();
+	    $('#modal-user').iziModal('open');
+	});
+
     $('input[type=radio][name=proposal]').change(function() {
         if (this.value == 'other')
         	$(".other").removeClass('hide')
@@ -189,20 +245,37 @@ jQuery(document).ready(function($) {
     });
 
     $(document).bind('change', function(e){
-    if( $(e.target).is(':invalid') ){
-        $(e.target).parent().addClass('has-error');
-    } else {
-        $(e.target).parent().removeClass('has-error');
-    }
-    
-    $('form#form-proposal #submit-proposal').click(function(event) { // <- goes here !
-	    if ($(".other9").val().length <= 0 && $(".lainnya").is(':checked')){
-	    	$(".other9").parent().addClass('has-error')
-	        event.preventDefault();
+	    if( $(e.target).is(':invalid') ){
+	        $(e.target).parent().addClass('has-error');
+	    } else {
+	        $(e.target).parent().removeClass('has-error');
 	    }
-	    else {
-	    	$(".lainnya").val($(".other9").val());   	
-	    }   
+	    
+	    $('form#form-proposal #submit-proposal').click(function(event) { // <- goes here !
+		    if ($(".other9").val().length <= 0 && $(".lainnya").is(':checked')){
+		    	$(".other9").parent().addClass('has-error')
+		        event.preventDefault();
+		    }
+		    else {
+		    	$(".lainnya").val($(".other9").val());   	
+		    }   
+		});
+
+		$('#submit-user').click(function(event) { // <- goes here !
+		    if ($(".other10").val().length <= 0 && $(".lainnya").is(':checked')){
+		    	$(".other10").parent().addClass('has-error')
+		        event.preventDefault();
+		    }
+		    else {
+		    	$(".lainnya-user").val($(".other10").val());   	
+		    }   
+		});
 	});
-});
+
+	$('[data-toggle="datepicker"]').datepicker({
+		zIndex: "99999",
+		autoHide: true,
+		format: 'yyyy-mm-dd'
+	});
+	console.log("ASD")
 });

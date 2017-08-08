@@ -29,6 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script type="text/javascript">
 				var n = $(".hugest").data('count');
 				var tm = setInterval(countDown,1000);
+				var c = n + 1;
+				var tm2 = setInterval(countDown2,1000);
+
 
 				function countDown(){
 				   n--;
@@ -37,7 +40,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			   			window.location = "<?php echo base_url();?>download-proposal";
 			   			//window.location = "<?php echo base_url();?>";
 			      		clearInterval(tm);
-			      		console.log("ASD");
+				   }
+				}
+
+				function countDown2(){
+				   c--;
+				   if(n == 0){
+			   			window.location = "<?php echo base_url();?>";
+			   			//window.location = "<?php echo base_url();?>";
+			      		clearInterval(tm);
 				   }
 				}
 		</script>
